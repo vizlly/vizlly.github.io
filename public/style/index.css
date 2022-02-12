@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700&display=swap');
+*,::after,::before{
+  box-sizing: border-box;
+}
+body,html{
+  margin: 0;
+  min-height: 100%
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Roboto,Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #e3ebee;
+  scrollbar-width: thin;
+}
+a{
+  text-decoration:none;
+  outline: none;
+  cursor: pointer;
+  color:inherit;
+}
+
+img,svg{
+  display: block;
+  margin: auto;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding: 1rem 5%;  
+  justify-content: space-between;
+  background-color: inherit;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.hide{
+  height: 10px;
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+.logo{
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  gap:.25rem;
+}
+.logo img{
+  width: 2rem;
+}
+.realtive{
+  position: relative;
+}
+.comming_soon{
+  position:absolute;
+  top: 30%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  left:50%;
+  font-size: 2rem;
+  white-space: nowrap;
+  transform: translate(-50%,0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(.64,-0.76,.36,1.76);
+}
+
+.comming_soon:hover{
+  transform:  translate(-50%,0) scale(1.2);
+}
