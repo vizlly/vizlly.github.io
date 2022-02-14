@@ -11,12 +11,18 @@ body{
   background-color: #e3ebee;
   scrollbar-width: thin;
 }
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 14px;
+  }
+}
 a{
   text-decoration:none;
   outline: none;
   cursor: pointer;
   color:inherit;
 }
+p{margin:0;}
 
 img,svg{
   display: block;
@@ -24,6 +30,13 @@ img,svg{
   width: 100%;
   user-select: none;
   pointer-events: none;
+}
+.container{
+  max-width: 1600px;
+  margin: auto;
+  display:flex;
+  flex-direction:column;
+  gap:6rem;
 }
 
 nav{
@@ -34,6 +47,7 @@ nav{
   justify-content: space-between;
   background-color: inherit;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  z-index: 10;
 }
 
 .hide{
@@ -56,7 +70,7 @@ nav{
 }
 .comming_soon{
   position:absolute;
-  top: 30%;
+  top: 45%;
   background-color: white;
   border-radius: 2rem;
   padding: 1rem 2rem;
@@ -71,4 +85,40 @@ nav{
 
 .comming_soon:hover{
   transform:  translate(-50%,0) scale(1.2);
+}
+
+section {
+  padding: 0 5%;
+}
+
+.details{
+  display: flex;
+  justify-content: space-around;
+  gap:3rem;
+  flex-wrap: wrap;
+}
+
+.h1{
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: .5rem;
+  border-radius: 0.5rem;
+  /* background-color:#fff; */
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius:.5rem;
+  flex: 1 1 350px;
+}
+p{
+  opacity:0.6;
+  text-align: justify;
+}
+.big{
+  font-size: 5rem;
+  margin-top:4rem;
+  text-align:center;
 }
